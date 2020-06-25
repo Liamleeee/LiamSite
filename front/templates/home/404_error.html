@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>您要找的页面不存在 | SOP平台</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== Header favicon icon ================== -->
+	<link rel="shortcut icon" href="{% static 'icon/favicon.ico' %}" type="image/x-icon" />
+
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<link href="{% static 'css/base/default/app.min.css' %}" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+</head>
+<body class="pace-top">
+	<!-- begin #page-loader -->
+	<div id="page-loader" class="fade show">
+		<span class="spinner"></span>
+	</div>
+	<!-- end #page-loader -->
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade">
+		<!-- begin error -->
+		<div class="error">
+			<div class="error-code">404</div>
+			<div class="error-content">
+				<div class="error-message">您要找的页面不存在</div>
+				<div class="error-desc mb-3 mb-sm-4 mb-md-5">
+					可能是因为您的链接地址有误、改功能已被平台下架
+				</div>
+				<div>
+					<a href="/dashboard/" class="btn btn-success p-l-20 p-r-20">返回SOP平台</a>
+				</div>
+			</div>
+		</div>
+		<!-- end error -->
+
+	</div>
+	<!-- end page container -->
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="{% static 'js/base/app.min.js' %}"></script>
+	<script src="{% static 'js/base/default.min.js' %}"></script>
+	<!-- ================== END BASE JS ================== -->
+</body>
+</html>
